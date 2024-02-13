@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="Icon" href="img/logo-2.png">
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Train+One&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <title>Видеонаблюдение</title>
+</head>
+<body class="font-['Manrope'] w-full">
+  <header class="fixed flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-black bg-opacity-80 text-white text-sm py-3 sm:py-1 ">
+    <nav class="relative max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8 " aria-label="Global">
+      <div class="flex items-center justify-between">
+        <a class="flex-none text-xl font-semibold text-white" href="index.html" aria-label="Brand"><img class="h-10 md:h-16" src="img/logo-22.png" alt="logo"></a>
+        <div class="sm:hidden">
+          <button type="button" class="hs-collapse-toggle w-4 h-4 flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg  text-red-500 hover:border-white/40 disabled:opacity-50 disabled:pointer-events-none" data-hs-collapse="#navbar-collapse-with-animation" aria-controls="navbar-collapse-with-animation" aria-label="Toggle navigation">
+            <svg class="hs-collapse-open:hidden flex-shrink-0 w-7 h-7" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" x2="21" y1="6" y2="6"/><line x1="3" x2="21" y1="12" y2="12"/><line x1="3" x2="21" y1="18" y2="18"/></svg>
+            <svg class="hs-collapse-open:block hidden flex-shrink-0 w-7 h-7" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+          </button>
+        </div>
+      </div>
+      <div id="navbar-collapse-with-animation" class="hs-collapse hidden  transition-all duration-300 basis-full grow sm:block">
+        <div class="flex flex-col  gap-x-0 mt-5 sm:flex-row sm:items-center sm:justify-end sm:gap-y-0 sm:gap-x-7 sm:mt-0 sm:ps-7">
+            <a class="block btn py-2 pr-4 pl-3 hover:text-red-500 duration-500 text-[9px] text-center lg:text-sm xl:text-lg" href="video.html" aria-current="page">Видеонаблюдение</a>
+            <a class="block btn py-2 pr-4 pl-3 hover:text-red-500 duration-500 text-[9px] text-center lg:text-sm xl:text-lg" href="pojarnaia.html">Пожарная сигнализация</a>
+            <a class="block btn py-2 pr-4 pl-3 hover:text-red-500 duration-500 text-[9px] text-center lg:text-sm xl:text-lg" href="skud.html">СКУД</a>
+            <div class="gap-y-2 flex flex-col">
+                <a class="block btn hover:text-red-500 duration-500 text-[9px] text-center lg:text-sm xl:text-lg" href="tel:+74952039798">8 (495) 203-97-98</a>
+                <a class="block btn hover:text-red-500 duration-500 text-[9px] text-center lg:text-sm xl:text-lg" href="mailto:info@myoxrana.ru">info@myoxrana.ru</a>
+            </div>
+            <div class="gap-y-2 gap-2 justify-center flex flex-row lg:flex-col">
+              <a href="https://wa.clck.bar/79267498676"><img class="w-8" src="img/ws.svg" alt="whatsup"></a>
+              <a href="https://t.me/+79267498676"><img class="w-8" src="img/tg.svg" alt="telegram"></a>
+          </div>
+          </div>
+      </div>
+    </nav>
+</header>
+    <main class="space-y-0 md:space-y-0">
+        <section class=" pb-10 md:pb-36 pt-10 md:pt-60 ">
+          <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+              <div class="md:grid md:grid-cols-2 md:items-center md:gap-12 xl:gap-3 overflow-hidden">
+              <div class="mt-5 sm:mt-10 lg:mt-0">
+                  <div class="space-y-2 md:space-y-8 text-center md:text-left">
+                      <h2 class="font-bold text-3xl lg:text-5xl animate__animated animate__backInDown ">
+                      Установка видеонаблюдения под ключ от 20.000 руб
+                      </h2>
+                      <div class="flex justify-center gap-3 w-full animate__animated animate__backInUp">
+                        <a class="w-[360px] md:w-[550px] bg-red-500 text-white h-[50px] md:h-[70px] border-red-500 border-2 text-3xl md:text-3xl lg:text-4xl my-3 flex items-center justify-center rounded-xl cursor-pointer relative overflow-hidden transition-all duration-500 ease-in-out shadow-md hover:scale-100 hover:shadow-lg before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-white before:to-white before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-xl hover:before:left-0 hover:text-red-500" href="tel:+74952039798">Позвонить</a>
+                        <a class="w-[360px] md:w-[550px]  text-black h-[50px] md:h-[70px] border-red-500 border-2 text-3xl md:text-3xl lg:text-4xl my-3 flex items-center justify-center rounded-xl cursor-pointer relative overflow-hidden transition-all duration-500 ease-in-out shadow-md hover:scale-100 hover:shadow-lg before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-red-500 before:to-red-500 before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-xl hover:before:left-0 hover:text-white" href="#comp">Комплекты</a>
+                    </div>
+                  </div>
+              </div>
+              <div>
+                <img class="hidden xl:block animate__animated animate__backInRight" src="img/bg-mid-33.jpg" alt="Image Description">
+                <img class="block xl:hidden animate__animated animate__backInRight" src="img/bg-mid-33.png" alt="Image Description">
+            </div>
+              </div>
+              <div class="flex justify-around pt-14 md:pt-40">
+                <p class="flex flex-col md:flex-row items-center justify-center text-center md:text-left gap-3 text-sm md:text-xl"><img class="w-14" src="img/video/1.png" alt="icon">Выезд и расчёт <br> стоимости Бесплатно</p>
+                <p class="flex flex-col md:flex-row items-center justify-center text-center md:text-left gap-3 text-sm md:text-xl"><img class="w-14" src="img/video/2.png" alt="icon">Удаленный онлайн <br> доступ с телефона</p>
+                <p class="flex flex-col md:flex-row items-center justify-center text-center md:text-left gap-3 text-sm md:text-xl"><img class="w-14" src="img/video/3.png" alt="icon">Гарантия на <br> оборудование до 3 лет</p>
+              </div>
+          </div>
+          </section>
+          <section id="comp" class="container mx-auto md:mx-auto xl:mx-auto py-20">
+            <h2 class="mb-12 text-4xl md:text-6xl font-bold text-center py-10">
+              <span class="text-red-500">Пакетные</span> предложения
+          </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 justify-center mx-auto md:mx-auto xl:mx-auto gap-3 md:gap-5 px-2 2xl:px-48 w-full">
+
+              <div class="bg-[#1e222f]  rounded-xl p-6 text-white w-full md:w-[21rem] lg:w-[30rem] xl:w-[35rem] mx-auto">
+                <h2 class="text-center xl:text-left text-2xl md:text-3xl pb-4">Комплект <span class="text-red-500 text-lg">БАЗОВЫЙ</span></h2>
+                <ul class="text-xl xl:text-2xl pb-4 text-center xl:text-left">
+                  <li>- Две IP камеры <span class="text-red-500">Hi Watch</span> </li>
+                  <li>- Флэш-карты на 128 GB </li>
+                  <li>- Два блока питания </li>
+                  <li>- Коммутатор на 4 порта </li>
+                  <li>- Монтажные работы </li>
+                  <li>- Подключение камер в ваш телефон </li>
+                </ul>
+                <p class="text-red-500 text-xl md:text-4xl font-bold text-center xl:text-left">от 20 000 т.р. </p>
+                <div class="flex justify-center xl:justify-between items-center py-2">
+                  <a class=" py-2 md:py-3 px-4 md:px-12 border-2 rounded-xl text-2xl md:text-4xl hover:bg-red-500 hover:border-red-500 duration-300" href="tel:+74952039798">Позвонить</a>
+                  <div class="hidden xl:block text-center text-3xl rounded-full bg-[#64719c] px-6 py-8">
+                    <p>Гарантия</p>
+                    <p>до</p>
+                    <p class="text-4xl">3 лет</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-[#1e222f]  rounded-xl p-6 text-white w-full md:w-[21rem] lg:w-[30rem] xl:w-[35rem] mx-auto">
+                <h2 class="text-center xl:text-left text-2xl md:text-3xl pb-4">Комплект <span class="text-red-500 text-lg">ОПТИМАЛЬНЫЙ</span></h2>
+                <ul class="text-xl xl:text-2xl pb-4 text-center xl:text-left">
+                  <li>- Четыре IP камеры <span class="text-red-500">Hi Watch</span></li>
+                  <li>- Регистратор Hi Watch c диском 1 TB</li>
+                  <li>- Кабель UTP</li>
+                  <li>- Расходные материалы</li>
+                  <li>- Монтажные работы</li>
+                  <li>- Подключение камер в ваш телефон </li>
+                </ul>
+                <p class="text-red-500 text-xl md:text-4xl font-bold text-center xl:text-left">от 55 000 т.р. </p>
+                <div class="flex justify-center xl:justify-between items-center py-2">
+                  <a class=" py-2 md:py-3 px-4 md:px-12 border-2 rounded-xl text-2xl md:text-4xl hover:bg-red-500 hover:border-red-500 duration-300" href="tel:+74952039798">Позвонить</a>
+                  <div class="hidden xl:block text-center text-3xl rounded-full bg-[#64719c] px-6 py-8">
+                    <p>Гарантия</p>
+                    <p>до</p>
+                    <p class="text-4xl">3 лет</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-[#1e222f]  rounded-xl p-6 text-white w-full md:w-[21rem] lg:w-[30rem] xl:w-[35rem] mx-auto">
+                <h2 class="text-center xl:text-left text-2xl md:text-3xl pb-4">Комплект <span class="text-red-500 text-lg">ПРОФЕССИОНАЛЬНЫЙ</span></h2>
+                <ul class="text-xl xl:text-2xl pb-4 text-center xl:text-left">
+                  <li>- Восемь IP камеры <span class="text-red-500">Hi Watch</span></li>
+                  <li>- Регистратор Hi Watch на 8 IP каналов</li>
+                  <li>- Жёсткий диск 1 TB</li>
+                  <li>- Коммутатор PoE на 8 портов</li>
+                  <li>- Монтажные работы </li>
+                  <li>- Подключение камер в ваш телефон </li>
+                </ul>
+                <p class="text-red-500 text-xl md:text-4xl font-bold text-center xl:text-left">от 85 000 т.р. </p>
+                <div class="flex justify-center xl:justify-between items-center py-2">
+                  <a class=" py-2 md:py-3 px-4 md:px-12 border-2 rounded-xl text-2xl md:text-4xl hover:bg-red-500 hover:border-red-500 duration-300" href="tel:+74952039798">Позвонить</a>
+                  <div class="hidden xl:block text-center text-3xl rounded-full bg-[#64719c] px-6 py-8">
+                    <p>Гарантия</p>
+                    <p>до</p>
+                    <p class="text-4xl">3 лет</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-[#1e222f]  rounded-xl p-6 text-white w-full md:w-[21rem] lg:w-[30rem] xl:w-[35rem] mx-auto">
+                <h2 class="text-center xl:text-left text-2xl md:text-3xl pb-4">Комплект <span class="text-red-500 text-lg">УЛЬТРА</span></h2>
+                <ul class="text-xl xl:text-2xl pb-4 text-center xl:text-left">
+                  <li>- Шестнадцать IP камеры <span class="text-red-500">Hi Watch</span></li>
+                  <li>- Регистратор Hi Watch на 16 IP каналов</li>
+                  <li>- Жёсткий диск 2 TB</li>
+                  <li>- Коммутатор PoE на 16 портов</li>
+                  <li>- Монтажные работы </li>
+                  <li>- Подключение камер в ваш телефон </li>
+                </ul>
+                <p class="text-red-500 text-xl md:text-4xl font-bold text-center xl:text-left">от 150 000 т.р. </p>
+                <div class="flex justify-center xl:justify-between items-center py-2">
+                  <a class=" py-2 md:py-3 px-4 md:px-12 border-2 rounded-xl text-2xl md:text-4xl hover:bg-red-500 hover:border-red-500 duration-300" href="tel:+74952039798">Позвонить</a>
+                  <div class="hidden xl:block text-center text-3xl rounded-full bg-[#64719c] px-6 py-8">
+                    <p>Гарантия</p>
+                    <p>до</p>
+                    <p class="text-4xl">3 лет</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </section>
+          <section class="container mx-auto space-y-0 md:space-y-10 py-20">
+            <h2 class="mb-12 text-4xl md:text-6xl font-bold text-center py-10">
+              <span class="text-red-500">Этапы</span> подключения
+          </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 justify-center gap-y-10">
+              <div class="flex items-center gap-4 text-lg lg:text-2xl font-bold mx-10 md:mx-auto">
+                  <img class="w-12 xl:w-20 h-[6rem]" src="img/-1.png" alt="icon">
+                  <p>Консультация с <br>
+                    нашим инженером по <br>  
+                    заявке или звонку </p>
+              </div>
+              <div class="flex items-center gap-4 text-lg lg:text-2xl font-bold mx-10 md:mx-auto">
+                  <img class="w-12 xl:w-20 h-[6rem]" src="img/-2.png" alt="icon">
+                <p>Выезд мастера по <br>
+                  вашему адресу для  <br>
+                  уточнения всех деталей </p>
+              </div>
+              <div class="flex items-center gap-4 text-lg lg:text-2xl font-bold mx-10 md:mx-auto">
+                  <img class="w-12 xl:w-20 h-[6rem]" src="img/-3.png" alt="icon">
+                <p>Изучение условий для <br>
+                  монтажа и согласование  <br>
+                  стоимости установки </p>
+              </div>
+            </div>
+            <div class="flex flex-col md:flex-row justify-center px-0 md:px-40 gap-y-10 pt-7">
+              <div class="flex items-center justify-start md:justify-center mx-10 md:mx-auto gap-4 text-lg  lg:text-2xl font-bold">
+                <img class="w-12 xl:w-20 h-[6rem]" src="img/-4.png" alt="icon">
+                <p>Выполнение работ <br>
+                  по установке системы <br>
+                  видеонаблюдения </p>
+            </div>
+            <div class="flex items-center gap-4 justify-start md:justify-center mx-10 md:mx-auto text-lg  lg:text-2xl font-bold ">
+                <img class="w-12 xl:w-20 h-[6rem]" src="img/-5.png" alt="icon">
+                <p>Проведение оплаты <br>
+                  по договору и оформление <br>
+                 гарантии на работы</p>
+            </div>
+            </div>
+          </section>
+        <section class=" py-20">
+
+          <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto ">
+            <h2 class="font-bold text-3xl lg:text-5xl text-center pb-8">
+              <span class="text-red-500 ">Профилактическое</span> техническое обслуживание
+            </h2>
+            <div class="">
+              <div class="mt-5 sm:mt-10 lg:mt-10">
+                  <div class="grid grid-cols-2 gap-3 xl:gap-10 text-center">
+                      
+                    <div>
+                    <h2 class="font-bold text-xl lg:text-3xl">
+                        Ежемесячно:
+                      </h2>
+                      <p class="text-lg xl:text-2xl pb-5">
+                        <span class="text-red-500 font-bold">- </span>осматриваем устройства, выявляют внешние повреждения. <br>
+                        <span class="text-red-500 font-bold">- </span>тестируют и диагностируют основные компоненты системы.
+                      </p>
+                    </div>
+                    <div>
+                      <h2 class="font-bold text-xl lg:text-3xl">
+                        Раз в полгода:
+                      </h2>
+                      <p class="text-lg xl:text-2xl pb-5">
+                        <span class="text-red-500 font-bold">- </span>осматриваем устройства, выявляют внешние повреждения. <br>
+                        <span class="text-red-500 font-bold">- </span> тестируют и диагностируют основные компоненты системы. <br>
+                        <span class="text-red-500 font-bold">- </span>производим обслуживание камер видеонаблюдения, объективов, плат, видеорегистраторов, мониторов и др. оборудования.
+                      </p>
+                    </div>
+                    <div>
+                      <h2 class="font-bold text-xl lg:text-3xl">
+                        Ежегодно:
+                      </h2>
+                      <p class="text-lg xl:text-2xl pb-5">
+                        <span class="text-red-500 font-bold">- </span>проводим более доскональное техническое обслуживание видеонаблюдения. <br>
+                        <span class="text-red-500 font-bold">- </span>проверяем работоспособность всех источников питания и емкость аккумуляторов.
+                      </p>
+                    </div>
+                    <div>
+                      <h2 class="font-bold text-xl lg:text-3xl">
+                        Стандартный договор регламентных работ предусматривает:
+                      </h2>
+                      <p class="text-lg xl:text-2xl pb-5">
+                        <span class="text-red-500 font-bold">- </span>ежеквартальную проверку системы на износ мелких деталей, которые требуется заменить или отремонтировать. <br>
+                        <span class="text-red-500 font-bold">- </span>проведение очистки внешних составляющих камер видеонаблюдения, в частности, объективов.
+                      </p>
+                    </div>
+
+                  </div>
+                  <div>
+                    <img class="rounded-xl mx-auto" src="img/video/hero-video.jpg" alt="Image Description">
+                </div>
+              </div>
+              </div>
+          </div>>
+          </section>
+          <section class="  container mx-auto py-20">
+            <h2 class="mb-12 text-4xl md:text-6xl font-bold text-center py-10">
+              <span class="text-red-500">Наши</span> цены
+          </h2>
+            <div class="flex flex-col md:flex-row justify-center text-white">
+              <div class="flex flex-col bg-[#1e222f] rounded-xl">
+                <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
+                  <div class="inline-block min-w-full py-2 sm:px-6 lg:px-64">
+                    <div class="overflow-hidden">
+                      <table class="min-w-full text-left text-sm font-light">
+                        <thead class="text-lg md:text-2xl border-b font-medium">
+                          <tr class="text-red-500">
+                            <th scope="col" class="px-6 py-4">#</th>
+                            <th scope="col" class="px-6 py-4">СВН</th>
+                            <th scope="col" class="px-6 py-4">Цена в месяц</th>
+                            <th scope="col" class="px-6 py-4">Цена в квартал</th>
+                          </tr>
+                        </thead>
+                        <tbody class="text-lg md:text-2xl">
+                          <tr class="border-b">
+                            <td class="whitespace-nowrap px-6 py-4 font-medium text-red-500">1</td>
+                            <td class="whitespace-nowrap px-6 py-4">До 8 камер</td>
+                            <td class="whitespace-nowrap px-6 py-4">3490 рублей</td>
+                            <td class="whitespace-nowrap px-6 py-4">1690 рублей</td>
+                          </tr>
+                          <tr class="border-b">
+                            <td class="whitespace-nowrap px-6 py-4 font-medium text-red-500">2</td>
+                            <td class="whitespace-nowrap px-6 py-4">До 16 камер</td>
+                            <td class="whitespace-nowrap px-6 py-4">5520 рублей</td>
+                            <td class="whitespace-nowrap px-6 py-4">2790 рублей</td>
+                          </tr>
+                          <tr class="border-b">
+                            <td class="whitespace-nowrap px-6 py-4 font-medium text-red-500">3</td>
+                            <td class="whitespace-nowrap px-6 py-4">До 32 камер</td>
+                            <td class="whitespace-nowrap px-6 py-4">9020 рублей</td>
+                            <td class="whitespace-nowrap px-6 py-4">4552 рублей</td>
+                          </tr>
+                          <tr class="border-b">
+                            <td class="whitespace-nowrap px-6 py-4 font-medium text-red-500">4</td>
+                            <td class="whitespace-nowrap px-6 py-4">До 64 камер</td>
+                            <td class="whitespace-nowrap px-6 py-4">13620 рублей</td>
+                            <td class="whitespace-nowrap px-6 py-4">6664 рублей</td>
+                          </tr>
+                          <tr class="border-b">
+                            <td class="whitespace-nowrap px-6 py-4 font-medium text-red-500">5</td>
+                            <td class="whitespace-nowrap px-6 py-4">До 128 камер</td>
+                            <td class="whitespace-nowrap px-6 py-4">19640 рублей</td>
+                            <td class="whitespace-nowrap px-6 py-4">9408 рублей</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex justify-center w-full pt-10">
+              <a class="w-[360px] md:w-[550px] bg-red-500 text-white h-[50px] md:h-[70px] border-red-500 border-2 text-3xl md:text-4xl my-3 flex items-center justify-center rounded-xl cursor-pointer relative overflow-hidden transition-all duration-500 ease-in-out shadow-md hover:scale-100 hover:shadow-lg before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-white before:to-white before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-xl hover:before:left-0 hover:text-red-500" href="tel:+74952039798">Позвоните нам</a>
+          </div>
+          </section>
+        <section class="bg-[#1e222f] py-20">
+          <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto text-white">
+            <h2 class="mb- text-4xl md:text-6xl font-bold text-center py-5 md:py-10">
+              <span class="text-red-500">Доступность</span> выезда
+          </h2>
+              <div class="md:grid md:grid-cols-2 md:items-center md:gap-12 xl:gap-3 overflow-hidden space-y-5">
+                <div class="mt-5 sm:mt-10 lg:mt-0">
+                  <div class="space-y-2 md:space-y-8 text-center md:text-left">
+                      <h2 class="font-bold text-3xl lg:text-4xl">
+                      Мы проводим монтаж и 
+                      техническое обслуживание
+                      видеонаблюдения по Москве <br>
+                      и до 50 км от МКАД
+                      </h2>
+                  </div>
+              </div>
+              <div>
+                <img class="" src="img/maps (2).png" alt="Image Description">
+            </div>
+              </div>
+          </div>
+          </section>
+        <section class="px-4 pb-20">
+          <div>
+              <h2 class="mb-12 text-6xl font-bold text-center ">
+                  <span class="text-red-500">Наши</span> работы
+              </h2>
+          </div>
+          <div class="container mx-auto grid grid-cols-2 md:grid-cols-2 gap-4 md:gap-8 pl-0 2xl:pl-20 ">
+              <div>
+                  <img class="footer__video-img" src="img/video/1.jpg" alt="image">
+              </div>
+              <div>
+                  <img class="footer__other-img" src="img/video/2.jpg" alt="image">
+              </div>
+              <div>
+                  <img class="footer__other-img" src="img/video/3.jpg" alt="image">
+              </div>
+              <div>
+                  <img class="footer__other-img" src="img/video/4.jpg" alt="image">
+              </div>
+              <div>
+                  <img class="footer__other-img" src="img/video/5.jpg" alt="image">
+              </div>
+              <div>
+                  <img class="footer__other-img" src="img/video/6.jpg" alt="image">
+              </div>
+              <div>
+                  <img class="footer__other-img" src="img/video/7.jpg" alt="image">
+              </div>
+              <div>
+                  <img class="footer__other-img" src="img/video/8.jpg" alt="image">
+              </div>
+          </div>
+          
+      </section>
+      
+
+
+
+      <footer class="bg-[#1e222f] pt-20 absolute w-full">
+        <div class="mx-auto w-full md:max-w-screen-xl p-4 py-6 lg:py-8">
+            <div class="md:flex md:justify-between">
+              <div class="mb-6 md:mb-0">
+                  <a href="index.html" class="flex items-center">
+                      <img src="img/logo.webp" class="h-28 me-3" alt="logo" />
+                  </a>
+              </div>
+              <div class="flex gap-5 md:gap-20">
+                  <div>
+                      <ul class="text-white  font-medium text-lg">
+                          <li class="mb-4">
+                              <a href="tel:+74952039798" class="hover:text-red-500 duration-300">8 (495) 203 97 98</a>
+                          </li>
+                          <li>
+                              <a href="mailto:info@myoxrana.ru" class="hover:text-red-500 duration-300">info@myoxrana.ru</a>
+                          </li>
+                          <ul class="flex gap-6 pt-4 md:hidden text-gray-500  font-medium text-lg">
+                            <li class="mb-4">
+                                <a href="https://t.me/+79267498676" class=""><img class="w-8 hover:scale-125 duration-300" src="img/tg.svg" alt="whatsup"></a>
+                            </li>
+                            <li>
+                                <a href="https://wa.clck.bar/79267498676" class=""><img class="w-8 hover:scale-125 duration-300" src="img/ws.svg" alt="telegram"></a>
+                            </li>
+                        </ul>
+                      </ul>
+                  </div>
+                  <div>
+                    <ul class="hidden md:block text-white  font-medium text-lg">
+                        <li class="mb-4">
+                            <a href="https://t.me/+79267498676" class=""><img class="w-8 hover:scale-125 duration-300" src="img/tg.svg" alt="whatsup"></a>
+                        </li>
+                        <li>
+                            <a href="https://wa.clck.bar/79267498676" class=""><img class="w-8 hover:scale-125 duration-300" src="img/ws.svg" alt="telegram"></a>
+                        </li>
+                    </ul>
+                  </div>
+                  <div>
+                      <ul class="text-white  font-medium text-lg">
+                          <li class="mb-4">
+                              <p class="">117465, г. Москва</p>
+                          </li>
+                          <li>
+                              <p class="">Ул. Генерала Тюленева д. 4А стр 1</p>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+          <hr class="my-6 border-gray-200 sm:mx-auto  lg:my-8" />
+          <div class="sm:flex sm:items-center sm:justify-between">
+              <span class="text-sm text-white sm:text-center ">© 2024 <a href="index.html" class="hover:text-red-500 duration-300">АРСЕНАЛ</a>. Все права защищены.
+              </span>
+            <div>
+                <a class="text-white" href="https://t.me/Black_monys">Made by <span class=" hover:text-red-500 duration-300">BLMS</span></a>
+            </div>
+          </div>
+        </div>
+    </footer>
+    </main>
+
+
+        <script src="./node_modules/preline/dist/preline.js"></script>
+        <script src="js/countUp.min.js"></script>
+
+        <script>
+            function Menu(e){
+              let list = document.querySelector('ul');
+              e.name === 'menu' ? (e.name = "close",list.classList.add('top-[0px]') , list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
+            }
+        </script>
+
+</body>
+</html>

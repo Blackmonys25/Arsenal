@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+  
+  @layer components {
+    .btn-active {
+        @apply w-[360px] lg:w-[400px] xl:w-[550px] bg-red-500 text-white h-[50px] md:h-[70px] border-red-500 border-2 text-3xl md:text-4xl my-3 flex items-center justify-center rounded-xl cursor-pointer relative overflow-hidden transition-all duration-500 ease-in-out shadow-md hover:scale-100 hover:shadow-lg before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-white before:to-white before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-xl hover:before:left-0 hover:text-red-500;
+    }
+    .footer-img {
+        @apply hover:scale-125 duration-300 overflow-hidden rounded-lg hover:border-4 border-red-500;
+    }
+    .footer__other-img {
+        @apply hover:scale-125 duration-300 overflow-hidden rounded-lg hover:border-4 border-red-500 w-[600px];
+    }
+
+
+    .btn {
+      padding: 0;
+      margin: 0;
+      border: none;
+      background: none;
+      cursor: pointer;
+      
+    }
+    
+    .btn {
+      --primary-color: #111;
+      --hovered-color: #ff0000;
+      position: relative;
+      display: flex;
+      font-weight: 600;
+      gap: 0.5rem;
+      align-items: center;
+    }
+    
+    .btn a {
+      margin: 0;
+      position: relative;
+      font-size: 20px;
+      color: var(--primary-color);
+    }
+    
+    .btn::after {
+      position: absolute;
+      content: "";
+      width: 0;
+      left: 0;
+      bottom: -1px;
+      background: var(--hovered-color);
+      height: 1.5px;
+      transition: 0.3s ease-out;
+    }
+    
+    .btn a ::before {
+      position: absolute;
+      /*   box-sizing: border-box; */
+      content: "Subscribe";
+      width: 0%;
+      inset: 0;
+      color: var(--hovered-color);
+      overflow: hidden;
+      transition: 0.3s ease-out;
+    }
+    
+    .btn:hover::after {
+      width: 100%;
+    }
+    
+    .btn:hover a ::before {
+      width: 100%;
+    }
+    
+    .btn:hover svg {
+      transform: translateX(4px);
+      color: var(--hovered-color);
+    }
+    
+    .btn svg {
+      color: var(--primary-color);
+      transition: 0.2s;
+      position: relative;
+      width: 15px;
+      transition-delay: 0.2s;
+    }
+    
+}
