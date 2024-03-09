@@ -1,8 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Мы всегда открыты для сотрудничества и профессионального решения ваших задач.
+    Профессиональные решения для вашего бизнеса.
+    Гарантия на работы и оборудование до 3-х лет.
+    Бесплатный выезд на расчет и подготовку сметы.">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,8 +42,8 @@
                 <a class="block btn py-2 pr-4 pl-3 hover:text-red-500 duration-500 text-[9px] text-center lg:text-sm xl:text-lg" href="pojarnaia.html">Пожарная сигнализация</a>
                 <a class="block btn py-2 pr-4 pl-3 hover:text-red-500 duration-500 text-[9px] text-center lg:text-sm xl:text-lg" href="skud.html">СКУД</a>
                 <div class="gap-y-2 flex flex-col">
-                    <a class="block btn hover:text-red-500 duration-500 text-[9px] text-center lg:text-sm xl:text-lg" href="tel:+74952039798">8 (495) 203-97-98</a>
-                    <a class="block btn hover:text-red-500 duration-500 text-[9px] text-center lg:text-sm xl:text-lg" href="mailto:info@myoxrana.ru">info@myoxrana.ru</a>
+                    <a class="block btn hover:text-red-500 duration-500 text-[9px] text-center lg:text-sm xl:text-lg" href="tel:+79254704029">8 (925) 479-40-29</a>
+                    <a class="block btn hover:text-red-500 duration-500 text-[9px] text-center lg:text-sm xl:text-lg" href="mailto:sales@myoxrana.ru">sales@myoxrana.ru</a>
                 </div>
                 <div class="gap-y-2 gap-2 justify-center flex flex-row lg:flex-col">
                   <a href="https://wa.clck.bar/79267498676"><img class="w-8" src="img/ws.svg" alt="whatsup"></a>
@@ -50,13 +54,13 @@
         </nav>
     </header>
   <!-- ========== END HEADER ========== -->
-    <main class="space-y-0 md:space-y-20">
+    <main class="space-y-0 md:space-y-5">
         <section  class="relative py-10 md:py-36 overflow-hidden border-b- border-red-500 bg-[url('/img/polyg/bg11.png')] bg-cover bg-no-repeat bg-bottom">
             <div class="flex justify-center gap-0 md:gap-5">
                 <div class="justify-center flex flex-col">
                     <div class="pb-10 pt-20 md:pt-0 text-center md: animate__animated animate__backInDown">
-                        <p class="text-3xl md:text-6xl">Профессиональные решения</p>
-                        <p class="text-3xl md:text-6xl">для <span class="text-red-500">вашего бизнеса</span></p>
+                        <h1 class="text-3xl md:text-6xl">Профессиональные решения <br> для <span class="text-red-500">вашего бизнеса</span></h1>
+
                     </div>
                     <div class="grid grid-cols-2 md:grid-cols-2 text-center gap-2 md:gap-4 pb-10 w-full  animate__animated animate__backInUp">
                         <p class="text-sm md:text-xl bg-gray-200 p-3 rounded-xl">Лицензия МЧС на обслуживание и <br> монтаж пожарной сигнализации</p>
@@ -64,13 +68,50 @@
                         <p class="text-sm md:text-xl bg-gray-200 p-3 rounded-xl flex items-center justify-center">Гарантия на работы <br> и оборудование до 3-х лет</p>
                         <p class="text-sm md:text-xl bg-gray-200 p-3 rounded-xl">Бесплатный выезд на расчет <br> и подготовку сметы</p>
                     </div>
-                    <div class="flex justify-center w-full">
-                        <a class="btn-active animate__animated animate__backInUp" href="tel:+74952039798">Позвоните нам</a>
+                    <div class="flex flex-col justify-center items-center w-full">
+                        <a class="btn-active animate__animated animate__backInUp" href="tel:+79254704029">Позвоните нам</a>
+                        <div class="">
+                            <button type="button" class="btn-active animate__animated animate__backInUp" data-hs-overlay="#hs-basic-modal">
+                              Оставить заявку
+                            </button>
+                            
+                            <div id="hs-basic-modal" class="hs-overlay hs-overlay-open:opacity-100 hs-overlay-open:duration-500 hidden size-full fixed top-0 start-0 z-[80] opacity-0 overflow-x-hidden transition-all overflow-y-auto pointer-events-none">
+                              <div class="hs-overlay-open:opacity-100 hs-overlay-open:duration-500 opacity-0 transition-all sm:max-w-lg sm:w-full m-3 sm:mx-auto border-red-500 border-2 rounded-xl">
+                                <div class="flex flex-col bg-white border shadow-sm rounded-xl pointer-events-auto">
+                                  <div class="flex justify-center items-center py-3 px-4 ">
+                                    <h3 class="font-bold text-gray-800  text-xl ">
+                                      Оставьте заявку и мы вам перезвоним
+                                    </h3>
+                                  </div>
+                                  <div class="p-4 overflow-y-auto">
+                                    <div class="">
+          
+                                      <form id="form" >
+                                        <fieldset class="flex flex-col space-y-5 pb-5">
+                                          <input class="text-2xl bg-transparent outline-none border-b-2 font-bold border-red-500 placeholder-black text-black pb-2" required minlength="3" id="text1" type="text"placeholder="Ваше имя">
+                                          <input class="text-2xl bg-transparent outline-none border-b-2 font-bold border-red-500 placeholder-black text-black pb-2" required minlength="5" type="number" name="number" placeholder="Ваш телефон" id="text2">
+                                          <textarea class="outline-red-500 duration-300 ring-red-500 ring-1 placeholder-black text-black bg-transparent pl-2 pt-2 font-bold" placeholder="Напишите сообщение.." name="name" id="text3" cols="10" rows="5"></textarea>
+                                        </fieldset>  
+                                        <div class="flex justify-center pb-5">
+                                          <button class="py-2 md:py-3 px-4 md:px-12 border-2 rounded-xl text-xl hover:bg-red-500 border-red-500 duration-300" type="submit">Отправить</button>
+                                        </div>                          
+                                        </form>
+                                  </div>
+                                  </div>
+                                  <div class="flex justify-end items-center gap-x-2 py-3 px-4 border-t ">
+                                    <button type="button" class="py-2   px-5 border-2 rounded-xl text-sm hover:bg-red-500 hover:border-red-500 duration-300" data-hs-overlay="#hs-basic-modal">
+                                      Закрыть
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                     </div>
                 </div>
                 <div>
                     <div class="hidden md:hidden lg:block mx-auto max-w-full w-80 h-auto animate__animated animate__backInRight">
-                        <img class="max-w-full h-auto rounded-[1.25rem]" src="img/tel.png" alt="telephone">
+                        <img class="max-w-full h-auto rounded-[1.25rem]" src="img/tel.png" width="320px" height="617px" alt="telephone">
                     </div>
                 </div>
             </div>
@@ -106,25 +147,25 @@
             </div>
             <div class="container mx-auto grid justify-center sm:grid-cols-2 lg:grid-cols-2">
                 <div class="flex flex-col items-center p-4">
-                    <img class="w-24" src="img/1.png" alt="icon">
+                    <img class="w-24" src="img/1.png" loading="lazy" width="96px" height="96px" alt="icon">
                     <div class="space-y-1 text-lg">
                         <p>Мы работаем только с сертифицированными поставщиками и проверенным оборудованием. Это гарантирует, что ваша система будет работать именно так, как вы ожидаете. </p>
                     </div>
                 </div>
                 <div class="flex flex-col items-center p-4">
-                    <img class="w-24" src="img/2.png" alt="icon">
+                    <img class="w-24" src="img/2.png" loading="lazy" width="96px" height="96px" alt="icon">
                     <div class="space-y-1 text-lg">
                         <p>Специалисты обучат вас всему, что вам нужно знать о вашей системы, подготовят инструкции, установят приложения и расскажут, как им пользоваться. </p>
                     </div>
                 </div>
                 <div class="flex flex-col items-center p-4">
-                    <img class="w-24" src="img/3.png" alt="icon">
+                    <img class="w-24" src="img/3.png" loading="lazy" width="96px" height="96px" alt="icon">
                     <div class="space-y-1 text-lg">
                         <p>Мы стремимся к максимальному выполнению всех потребностей клиента и повышаем качество наших услуг. Мы ценим всех наших клиентов, от частных лиц до крупных компаний. </p>
                     </div>
                 </div>
                 <div class="flex flex-col items-center p-4">
-                    <img class="w-24" src="img/4.png" alt="icon">
+                    <img class="w-24" src="img/4.png" loading="lazy" width="96px" height="96px" alt="icon">
                     <div class="space-y-1 text-lg">
                         <p>Наша компания берёт на себя монтаж и обслуживание систем безопасности, пока вы занимаетесь – любимым делом.</p>
                     </div>
@@ -138,7 +179,7 @@
             </h2>
             <div class="md:grid md:grid-cols-2 md:items-center md:gap-12 xl:gap-32">
             <div>
-                <img class="rounded-xl" src="img/bg-mid.png" alt="Image Description">
+                <img class="rounded-xl" src="img/bg-mid.png" loading="lazy" width="584px" height="403px" alt="Image Description">
             </div>
             <div class="mt-5 sm:mt-10 lg:mt-0">
                 <div class="space-y-2 md:space-y-8 text-center md:text-left">
@@ -157,13 +198,50 @@
         <div class="bg-[#1e222f]   mx-auto px-4 sm:px-6 lg:px-8 ">
             <div class="container mx-auto grid lg:grid-cols-7 lg:gap-x-8 xl:gap-x-12 lg:items-center">
             <div class="lg:col-span-3 text-center md:text-left">
-                <h1 class="block text-3xl font-bold text-white sm:text-4xl md:text-5xl lg:text-6xl "><span class="text-red-500">Нам</span> доверяют</h1>
+                <h2 class="block text-3xl font-bold text-white sm:text-4xl md:text-5xl lg:text-6xl "><span class="text-red-500">Нам</span> доверяют</h2>
                 <p class="mt-3 text-3xl text-white py-10">С опытом работы более 10 лет, нам доверяют свою безопасность – более 20 крупных брендов. </p>
                 <p class="mt-3 text-3xl text-white ">У нас работают инженеры по слаботочным системам с опытом более 5 лет.</p>
-                <a class="btn-active flex justify-center animate__animated animate__backInUp" href="tel:+74952039798">Позвоните нам</a>
+                <a class="btn-active flex justify-center animate__animated animate__backInUp" href="tel:+79254704029">Позвоните нам</a>
+                <div class="pt-2">
+                    <button type="button" class="btn-active animate__animated animate__backInUp" data-hs-overlay="#hs-basic-modal">
+                      Оставить заявку
+                    </button>
+                    
+                    <div id="hs-basic-modal" class="hs-overlay hs-overlay-open:opacity-100 hs-overlay-open:duration-500 hidden size-full fixed top-0 start-0 z-[80] opacity-0 overflow-x-hidden transition-all overflow-y-auto pointer-events-none">
+                      <div class="hs-overlay-open:opacity-100 hs-overlay-open:duration-500 opacity-0 transition-all sm:max-w-lg sm:w-full m-3 sm:mx-auto border-red-500 border-2 rounded-xl">
+                        <div class="flex flex-col bg-white border shadow-sm rounded-xl pointer-events-auto">
+                          <div class="flex justify-center items-center py-3 px-4 ">
+                            <h3 class="font-bold text-gray-800  text-xl ">
+                              Оставьте заявку и мы вам перезвоним
+                            </h3>
+                          </div>
+                          <div class="p-4 overflow-y-auto">
+                            <div class="">
+  
+                              <form id="form" >
+                                <fieldset class="flex flex-col space-y-5 pb-5">
+                                  <input class="text-2xl bg-transparent outline-none border-b-2 font-bold border-red-500 placeholder-black text-black pb-2" required minlength="3" id="text1" type="text"placeholder="Ваше имя">
+                                  <input class="text-2xl bg-transparent outline-none border-b-2 font-bold border-red-500 placeholder-black text-black pb-2" required minlength="5" type="number" name="number" placeholder="Ваш телефон" id="text2">
+                                  <textarea class="outline-red-500 duration-300 ring-red-500 ring-1 placeholder-black text-black bg-transparent pl-2 pt-2 font-bold" placeholder="Напишите сообщение.." name="name" id="text3" cols="10" rows="5"></textarea>
+                                </fieldset>  
+                                <div class="flex justify-center pb-5">
+                                  <button class="py-2 md:py-3 px-4 md:px-12 border-2 rounded-xl text-xl hover:bg-red-500 border-red-500 duration-300" type="submit">Отправить</button>
+                                </div>                          
+                                </form>
+                          </div>
+                          </div>
+                          <div class="flex justify-end items-center gap-x-2 py-3 px-4 border-t ">
+                            <button type="button" class="py-2   px-5 border-2 rounded-xl text-sm hover:bg-red-500 hover:border-red-500 duration-300" data-hs-overlay="#hs-basic-modal">
+                              Закрыть
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
             </div>
             <div class="lg:col-span-4 mt-10 lg:mt-0 mx-auto">
-                <img class="w-full md:w-[700px] rounded-xl" src="img/friend1.png" alt="Image Description">
+                <img class="w-full md:w-[700px] rounded-xl" src="img/friend1.png" loading="lazy" width="700px" height="870px" alt="Image Description">
             </div>
             
             </div>
@@ -177,31 +255,31 @@
             </div>
             <div class="container mx-auto grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-8">
                 <div>
-                    <img class="footer-img" src="img/lob-1.jpg" alt="image">
+                    <img class="footer-img object-cover" src="img/lob-1.jpg" loading="lazy" width="490px" height="654px" alt="image">
                 </div>
                 <div>
-                    <img class="footer-img" src="img/lob-2.jpg" alt="image">
+                    <img class="footer-img object-cover" src="img/lob-2.jpg" loading="lazy" width="490px" height="654px" alt="image">
                 </div>
                 <div>
-                    <img class="footer-img" src="img/lob-3.jpg" alt="image">
+                    <img class="footer-img object-cover" src="img/lob-3.jpg" loading="lazy" width="490px" height="654px" alt="image">
                 </div>
                 <div>
-                    <img class="footer-img" src="img/lob-4.jpg" alt="image">
+                    <img class="footer-img object-cover" src="img/lob-4.jpg" loading="lazy" width="490px" height="654px" alt="image">
                 </div>
                 <div>
-                    <img class="footer-img" src="img/lob-5.jpg" alt="image">
+                    <img class="footer-img object-cover" src="img/lob-5.jpg" loading="lazy" width="490px" height="654px" alt="image">
                 </div>
                 <div>
-                    <img class="footer-img" src="img/lob-6.jpg" alt="image">
+                    <img class="footer-img object-cover" src="img/lob-6.jpg" loading="lazy" width="490px" height="654px" alt="image">
                 </div>
                 <div>
-                    <img class="footer-img" src="img/lob-7.jpg" alt="image">
+                    <img class="footer-img object-cover" src="img/lob-7.jpg" loading="lazy" width="490px" height="654px" alt="image">
                 </div>
                 <div>
-                    <img class="footer-img" src="img/lob-8.jpg" alt="image">
+                    <img class="footer-img object-cover" src="img/lob-8.jpg" loading="lazy" width="490px" height="654px" alt="image">
                 </div>
                 <div>
-                    <img class="footer-img" src="img/lob-9.jpg" alt="image">
+                    <img class="footer-img object-cover" src="img/lob-9.jpg" loading="lazy" width="490px" height="654px" alt="image">
                 </div>
             </div>
             
@@ -211,17 +289,17 @@
                 <div class="md:flex md:justify-between">
                   <div class="mb-6 md:mb-0">
                       <a href="index.html" class="flex items-center">
-                          <img src="img/logo.webp" class="h-28 me-3" alt="FlowBite Logo" />
+                          <img src="img/logo.webp" class="h-28 me-3" alt="Logo" loading="lazy" width="86px" height="112px" />
                       </a>
                   </div>
                   <div class="flex gap-5 md:gap-20">
                       <div>
                           <ul class="text-white font-medium text-lg">
                               <li class="mb-4">
-                                  <a href="tel:+74952039798" class="hover:text-red-500 duration-300">8 (495) 203 97 98</a>
+                                  <a href="tel:+79254704029" class="hover:text-red-500 duration-300">8 (925) 479-40-29</a>
                               </li>
                               <li>
-                                  <a href="mailto:info@myoxrana.ru" class="hover:text-red-500 duration-300">info@myoxrana.ru</a>
+                                  <a href="mailto:sales@myoxrana.ru" class="hover:text-red-500 duration-300">sales@myoxrana.ru</a>
                               </li>
                               <ul class="flex gap-6 pt-4 md:hidden text-gray-500  font-medium text-lg">
                                 <li class="mb-4">
@@ -276,6 +354,8 @@
 
 
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
     <script src="./node_modules/preline/dist/preline.js"></script>
     <script src="js/countUp.min.js"></script>
 
@@ -332,6 +412,8 @@
         
         })
     </script>
+
+
 
     
 </body>
